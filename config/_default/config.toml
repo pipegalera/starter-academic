@@ -1,7 +1,7 @@
 # @Author: pipegalera
 # @Date:   2020-11-02T12:07:42+01:00
 # @Last modified by:   pipegalera
-# @Last modified time: 2020-11-02T14:59:36+01:00
+# @Last modified time: 2020-11-02T15:01:02+01:00
 
 
 
@@ -28,7 +28,7 @@ copyright = "Website created with Hugo"
 ############################
 
 # Get last modified date for content from Git?
-enableGitInfo = false
+enableGitInfo = true
 
 # Default language to use (if you setup multilingual support)
 defaultContentLanguage = "en"
