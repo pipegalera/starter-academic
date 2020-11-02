@@ -1,7 +1,7 @@
 # @Author: pipegalera
 # @Date:   2020-11-02T12:07:42+01:00
 # @Last modified by:   pipegalera
-# @Last modified time: 2020-11-02T12:59:03+01:00
+# @Last modified time: 2020-11-02T13:22:30+01:00
 
 
 
@@ -69,11 +69,11 @@ highlight_languages = ["r"]  # Add support for highlighting additional languages
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
-math = false
+math = true
 
 # Enable diagram rendering? true/false
 #   If false, you can enable diagrams on a per page basis as needed.
-diagram = false
+diagram = true
 
 # Privacy pack
 #   Show a cookie consent message to visitors
