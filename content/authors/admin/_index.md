@@ -14,12 +14,12 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include statistics, causal inference and machine learning.
 
 interests:
-- Artificial Intelligence
-- Computational Linguistics
-- Information Retrieval
+- Causal Inference
+- Machine Learning
+- Development Economics
 
 education:
   courses:
@@ -42,7 +42,7 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/pipegalera
-  
+
 - icon: github
   icon_pack: fab
   link: https://github.com/pipegalera
