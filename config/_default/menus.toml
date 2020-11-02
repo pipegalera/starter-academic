@@ -1,7 +1,7 @@
 # @Author: pipegalera
 # @Date:   2020-11-02T12:07:42+01:00
 # @Last modified by:   pipegalera
-# @Last modified time: 2020-11-02T15:10:09+01:00
+# @Last modified time: 2020-11-02T15:40:24+01:00
 
 
 
@@ -26,6 +26,6 @@
 #  weight = 30
 
 [[main]]
-  name = "My CV in pdf"
+  name = "Complete CV"
   url = "files/pipegalera.pdf"
   weight = 40
