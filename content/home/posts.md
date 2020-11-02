@@ -25,12 +25,13 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ""
-    category = ""
-    publication_type = ""
+    tag = ["Test1", "Test2"]
+    category = ["Test3", "Test4"]
+    publication_type = ["Test5", "Test6"]
     author = ""
     exclude_featured = false
-
+    exclude_past = false
+    exclude_future = false
 [design]
   # Toggle between the various page layout types.
   #   1 = List
