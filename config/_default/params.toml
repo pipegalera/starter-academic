@@ -1,3 +1,10 @@
+# @Author: pipegalera
+# @Date:   2020-11-02T12:07:42+01:00
+# @Last modified by:   pipegalera
+# @Last modified time: 2020-11-02T12:59:03+01:00
+
+
+
 # SITE SETUP
 # Guide: https://sourcethemes.com/academic/docs/get-started/
 # Documentation: https://sourcethemes.com/academic/docs/
@@ -112,11 +119,7 @@ appointment_url = "https://calendly.com"
 # Contact links
 #   Set to `[]` to disable, or comment out unwanted lines with a hash `#`.
 contact_links = [
-  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Twitter"},
-  {icon = "skype", icon_pack = "fab", name = "Skype Me", link = "skype:echo123?call"},
-  {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/"},
-  {icon = "comments", icon_pack = "fas", name = "Discuss on Forum", link = "https://discourse.gohugo.io"},
-  # {icon = "telegram", icon_pack = "fab", name = "Telegram Me", link = "https://telegram.me/@Telegram"},
+  {icon = "twitter", icon_pack = "fab", name = "DM Me", link = "https://twitter.com/Pipegalera"}
   ]
 
 ############################
