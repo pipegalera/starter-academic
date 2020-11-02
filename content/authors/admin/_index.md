@@ -65,4 +65,4 @@ user_groups:
 #- Visitors
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I am a recent graduate in Economics at Københavns Universitet (September 2020). I have worked as a data analyst/quantitative research asistant for the last years in academia. Looking for transitioning to industry.
