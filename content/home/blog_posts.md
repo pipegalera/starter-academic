@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
-title = "Blog post"
+title = "Blog posts"
 subtitle = ""
 
 [content]
@@ -66,8 +66,3 @@ subtitle = ""
  # CSS class.
  css_class = ""
 +++
-
-  # Wait until you have enough content to filter
-  # {{% callout note %}}
-  # Quickly discover relevant content by [filtering publications](./# publication/).
-  # {{% /callout %}}
