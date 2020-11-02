@@ -31,3 +31,13 @@ B --> C{Decision}
 C -->|One| D[Result 1]
 C -->|Two| E[Result 2]
 ```
+
+{{< icon name="terminal" pack="fas" >}} Terminal
+{{< icon name="python" pack="fab" >}} Python
+{{< icon name="r-project" pack="fab" >}} R
+
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
