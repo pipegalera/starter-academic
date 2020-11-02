@@ -25,20 +25,19 @@ subtitle = ""
 
   # Filter posts by a taxonomy term.
   [content.filters]
-    tag = ["Test1", "Test2"]
-    category = ["Test3", "Test4"]
-    publication_type = ["Test5", "Test6"]
+    tag = ["Hola"]
+    category = ""
+    publication_type = ""
     author = ""
     exclude_featured = false
-    exclude_past = false
-    exclude_future = false
+
 [design]
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view = 3
+  view = 2
 
 [design.background]
   # Apply a background color, gradient, or image.

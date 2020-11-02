@@ -24,15 +24,6 @@ date_format = "Jan 2006"
   location = "Copenhagen, Denmark"
   date_start = "2019-11-01"
   date_end = "2020-09-01"
-  description = """
-  Responsibilities include:
-
-  * Developing statistical and econometric model used in the project.
-  * Cleaning survey panel data and financial data.
-  * Analyzing both regression and classification problems.
-  * Writing reports and guidelines, later presented to multinational companies.
-  * Data visualization with Matplotlib and Plotly.
-  """
 
 [[experience]]
   title = "Teacher Assistant"
@@ -41,12 +32,21 @@ date_format = "Jan 2006"
   location = "Copenhagen, Denmark"
   date_start = "2018-09-01"
   date_end = "2019-12-01"
-  description = """
-  * Taught principles of Microeconomics for large classes (+50). Average performance evaluated by students of 4,7 out of 5.
-  * Taught principles of Macroeconomics for large classes (+50). Average performance evaluated by students of 4,6 out of 5.
-  * Single instructor of various classes, actively teaching more than 8 hours per day,  2 days per week.
-  """
 
+[[experience]]
+  title = "Research Assistant"
+  company = "Københavns Universitet"
+  company_url = ""
+  location = "Copenhagen, Denmark"
+  date_start = "2018-01-01"
+  date_end = "2019-11-01"
 
+[[experience]]
+  title = "Undergraduate Research Assistant"
+  company = "Institute of Policy and Public Goods (IPP-CSIC)"
+  company_url = ""
+  location = "Madrid, Spain"
+  date_start = "2016-04-01"
+  date_end = "2016-07-01"
 
 +++
