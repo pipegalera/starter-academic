@@ -34,5 +34,19 @@ date_format = "Jan 2006"
   * Data visualization with Matplotlib and Plotly.
   """
 
+[[experience]]
+  title = "Teacher Assistant"
+  company = "Copenhagen Business School"
+  company_url = ""
+  location = "Copenhagen, Denmark"
+  date_start = "2018-09-01"
+  date_end = "2019-12-01"
+  description = """
+  * Taught principles of Microeconomics for large classes (+50). Average performance evaluated by students of 4,7 out of 5.
+  * Taught principles of Macroeconomics for large classes (+50). Average performance evaluated by students of 4,6 out of 5.
+  * Single instructor of various classes, actively teaching more than 8 hours per day,  2 days per week.
+  """
+
+
 
 +++
