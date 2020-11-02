@@ -1,7 +1,7 @@
 # @Author: pipegalera
 # @Date:   2020-11-02T12:07:42+01:00
 # @Last modified by:   pipegalera
-# @Last modified time: 2020-11-02T13:22:30+01:00
+# @Last modified time: 2020-11-02T13:29:48+01:00
 
 
 
@@ -64,8 +64,8 @@ description = ""
 # Enable source code highlighting? true/false
 # Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
 highlight = true
-highlight_languages = ["r"]  # Add support for highlighting additional languages
-# highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
+highlight_languages = ["r", "python"]  # Add support for highlighting additional languages
+highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
 
 # Enable LaTeX math rendering? true/false
 #   If false, you can enable math on a per page basis as needed.
