@@ -1,7 +1,7 @@
 # @Author: pipegalera
 # @Date:   2020-11-02T12:07:42+01:00
 # @Last modified by:   pipegalera
-# @Last modified time: 2020-11-02T12:14:45+01:00
+# @Last modified time: 2020-11-02T14:59:36+01:00
 
 
 
@@ -21,7 +21,7 @@ baseurl = "https://pipegalera.netlify.app/"
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
-copyright = ""
+copyright = "Website created with Hugo"
 
 ############################
 ## Advanced options below ##
