@@ -2,7 +2,7 @@
 title: 'Predicting credit card approval'
 subtitle: ''
 
-summary: We will build a machine learning model that can predict if an individual's application for a credit card will be accepted with 85% accuracy.
+summary: We will build a machine learning model that can predict an application approval for a credit card with 85% accuracy.
 
 authors:
 - admin
@@ -305,7 +305,7 @@ credit.isnull().values.sum()
 
 
 
-The dataset is not clean. For example, the column 1 has an object type but the values are numerical. Since we only have 16 columns, we can have a glance of every column to see what we should be looking for in the cleanning phase using a loop.
+The dataset is not clean. For example, column 1 has an object type but clearly the values are numerical. Since we only have 16 columns, we can have a glance at every column to see what we should be looking for in the cleaning phase using a loop.
 
 The loop prints the first 20 unique elements of every column.
 
@@ -339,7 +339,7 @@ for i in range(0,len(credit.columns)): print(credit[i].unique()[:20])
     ['+' '-']
 
 
-Apparently, the symbol ? is missing values
+Apparently, the symbol ? is missing values.
 
 # 2. Cleaning the data
 
@@ -647,7 +647,7 @@ print("Total missing values after fillnans:", credit.isnull().values.sum())
 
 # 3. Preprocesing
 
-Most of the algorithms are really picky with transforming your object columns to numerical. I will use sklearn label encoder to "hot encode" the categories: simply label every category (a,b,u,g,v...) in the object columns with a different integer.
+Most of the algorithms are picky with the format of your data. They have to be numerical. I will use sklearn label encoder to "hot encode" the categories: simply label every category (a,b,u,g,v...) in the object columns with a different integer.
 
 
 
@@ -950,7 +950,7 @@ objectransform(credit)
 
 
 
-After the hot encoding every different category inside every column is transformed to a integer.
+After the hot encoding, every different category inside every column is transformed into an integer.
 
 # 4. Basic Data Visualization
 
@@ -1017,7 +1017,7 @@ heatmap_target(credit)
 
 # 5. Modeling: Baseline Logistic Regression
 
-We have to change the DataFrames to arrays to be able to run the algorithms. We will use all the 15 features (X) to predict the credit card approval (y).
+We have to change the DataFrames to arrays to be able to run the algorithms. We will use all the 15 features (X) to predict credit card approval (y).
 
 
 ```python
@@ -1036,7 +1036,7 @@ A basiline model has 2 main premises:
     1. Should be simple (less likely to overfit).
     2. Should be interpretable (explainability will help for next models)
 
-I will start with a simple linear Logistic Regression model rescaling feaures.
+I will start with a simple linear Logistic Regression model rescaling features.
 
 Why I use linear logistic regression?
 
@@ -1046,22 +1046,23 @@ Why I use linear logistic regression?
 
     That is, if there is a relation between the features and the target, it most likely to be linear, and it does a good job predicting the expected value of the target conditional to their features attached.
 
-    For example, the expected credit card approval conditional or being married, being 35 years old and a low credit score.
+    For example, the expected credit card approval conditional or being married, being 35 years old, and a low credit score.
 
-    3. The results are interpretable. For example, using the results we can calculate the how being a bank costumer or your gender increases or decreses your probability or getting a credit card approved.
+    3. The results are interpretable. For example, using the results we can calculate how being a bank customer or your gender increases or decreases your probability of getting a credit card approved.
+
 
 Why I rescale the features?
 
     1. Without rescaling, the model does not converge.
 
-    2. It makes sense. The features are in different units (years education level, dollars of income, types of gender, credit scores...). With linear rescaling they are under the same range units, in this case 0 to 1.
+    2. It makes sense. The features are in different units (years education level, dollars of income, types of gender, credit scores...). With linear rescaling they are under the same range units. In this case, all the values are scaled to be in between 0 and 1.
 
 
 The metric chosen is accuracy, defined as:
 
 $$\text{Accuracy} = \frac{\text{Number of correct predictions}}{\text{Total number of predictions}}$$
 
-Accuracy alone doesn't tell the full story when you're working with a class-imbalanced data set. For example if all the credit card approval were rejected, then predicting always credit card denied would hold a 100% accuracy. However our data is not imbalanced, and have around 56% card application rejected and 44% accepted:
+Accuracy alone doesn't tell the full story when you're working with a class-imbalanced data set. For example, if all the credit card approval was rejected, then predicting always credit card denied would hold a 100% accuracy. However, our data is not imbalanced, with around 56% of card application rejected and 44% accepted:
 
 
 ```python
@@ -1118,9 +1119,9 @@ run_logreg(1/3)
     Accuracy with 33.0% of test data = 0.8260869565217391
 
 
-The algorithm is able to predict the approval or rejection of a credit card applicant only looking at their characteristics with 82.6% accuracy. Of the 228 credit profiles for the model to be tested (2/3 or the total 690 cases), it predicted correctly the approval or rejection 187 cases (82.6% of 228).
+The algorithm is able to predict the approval or rejection of a credit card applicant only looking at their characteristics with 82.6% accuracy. Of the 228 credit profiles for the model to be tested (2/3 or the total 690 cases), it predicted correctly the approval or rejection of 187 cases (82.6% of 228).
 
-We can play around with different proportions of train and test data to explore the case of overfitting (also refered as trade-off between variance and bias):
+We can play around with different proportions of train and test data to explore the case of overfitting (also referred to as *trade-off between variance and bias*):
 
 
 ```python
@@ -1138,26 +1139,25 @@ for test_size in [0.05,0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8]:
     Accuracy with 70.0% of test data = 0.8426501035196687
     Accuracy with 80.0% of test data = 0.8351449275362319
 
-
 In the test above, the logistic regression is 8% more precise splitting 5% of test data and 95% of train data than using 80% of test data and 20% of train data.
 
-The more the test size, the less train data the algorithm has to being able to "learn" the patterns that lead to the target. Therefore, is less accurate is predicting the feeded data.
+The more the test size, the fewer train data the algorithm has to be able to "learn" the patterns that lead to the target. Therefore, is less accurate in predicting the fed data.
 
 Despite that, the cost of using most of the data to train the model in small datasets like this one is that it overfits the model and it performs worse predicting new data. It learns so well the patterns of the current data that, when you introduce new data with some variations in the features, the algorithm does not know how to classify it well.
 
-We will deal with overfitting with performing a GridSearch that uses a different approach to split the data.
+We will deal with overfitting by performing a GridSearch that uses a different approach to split the data.
 
 # 6. Modeling: GridSearchCV Logistic Regression
 
-Instead of seting a fix and unique split between the train and the test sample, the cross validation algorithm will do the split k times, applying the logistic regressions and the accuracy in every split.
+Instead of setting a fixed and unique split between the train and the test sample, the cross-validation algorithm will do the split k times, applying the logistic regressions and the accuracy in every split.
 
 The average accuracy of the k tries will be the 'total' model accuracy.
 
-This method prevents overfitting because there is always a different blind proportion of the data that the algorithm does not use for trainning. Every split, different datapoints for training and test set, introducing feature variations.
+This method prevents overfitting because there is always a different blind proportion of the data that the algorithm does not use for training. Every split, different data points for training and test set, introducing feature variations.
 
 We also will perform a little bit of "tuning" proposing several hyperparameters values that the algorithm can choose from and pick the best ones.
 
-Visual representation of every split/iteration. The dots are datapoints, and the colors the labels. In the image we can se 4 iteration or splits with the same 1-to-4 proportion of test-to-train (5 dots test, 15 dots train).
+Visual representation of every split/iteration. The dots are data points and the red and green colors are the labels. In the image, we can see 4 iterations or splits with the same 1-to-4 proportion of test-to-train (5 dots test, 15 dots train).
 
 ![image from wikipedia](crossval.jpg)
 
@@ -1206,6 +1206,6 @@ for n_splits in [2,5,10,20]:
     Accuracy with 20 splits = 0.8523949579831933 using: {'C': 1, 'max_iter': 100, 'tol': 0.01}
 
 
-With cross validation in this small toy-dataset we see that it doesn't really matter how many splits it does, as the algorithm quickly find a pattern to predict the target, but it is usually helpful to explore different split values in more difficult datasets with less features and less clear boundaries between good and bad credit card customers.
+It doesn't really matter how many splits it does with cross-validation in this small toy-dataset, as the algorithm quickly finds a pattern to predict the target. In any case, it is considered good practice to explore different split values in more difficult datasets with fewer features and less clear boundaries between good and bad credit card customers.
 
-Overall we have a model with around 85% accuracy avoiding overfitting. Thanks for reading! Find the link to repository with the notebook [here](http://www.example.com).
+Overall we have a model with around 85% accuracy avoiding overfitting. Thanks for reading! Find the link to the repository with the notebook [here](http://www.example.com).
