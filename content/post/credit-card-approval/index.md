@@ -1208,4 +1208,4 @@ for n_splits in [2,5,10,20]:
 
 It doesn't really matter how many splits it does with cross-validation in this small toy-dataset, as the algorithm quickly finds a pattern to predict the target. In any case, it is considered good practice to explore different split values in more difficult datasets with fewer features and less clear boundaries between good and bad credit card customers.
 
-Overall we have a model with around 85% accuracy avoiding overfitting. Thanks for reading! Find the link to the repository with the notebook [here](http://www.example.com).
+Overall we have a model with around 85% accuracy avoiding overfitting. Thanks for reading! Find the link to the repository with the notebook [here](https://github.com/pipegalera/starter-academic/blob/master/content/post/credit-card-approval/credit_card_approval.ipynb).
