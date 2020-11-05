@@ -1,7 +1,7 @@
 # @Author: pipegalera
 # @Date:   2020-11-02T12:07:42+01:00
 # @Last modified by:   pipegalera
-# @Last modified time: 2020-11-02T15:48:16+01:00
+# @Last modified time: 2020-11-05T14:37:27+01:00
 
 
 
@@ -20,10 +20,10 @@
   url = "#experience"
   weight = 20
 
-# [[main]]
-#  name = "Posts"
-#  url = "#blog_posts"
-#  weight = 30
+[[main]]
+  name = "Posts"
+  url = "/post"
+  weight = 30
 
 [[main]]
   name = "Complete CV"
