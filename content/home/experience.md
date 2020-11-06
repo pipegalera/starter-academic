@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   date_end = "2020-09-01"
 
 [[experience]]
-  title = "Teacher Assistant"
+  title = "Teaching Assistant"
   company = "Copenhagen Business School"
   company_url = ""
   location = "Copenhagen, Denmark"
