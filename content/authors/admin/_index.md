@@ -10,7 +10,7 @@ role: Economist / Cand.polit.
 
 # Organizations/Affiliations
 organizations:
-- name: 
+- name:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
@@ -65,4 +65,4 @@ user_groups:
 #- Visitors
 ---
 
-I am a recent graduate in Economics from Københavns Universitet (September 2020). I have worked as a data analyst/quantitative research asistant for the last years in academia. Looking for transitioning to industry.
+I am a recent graduate in Economics from Københavns Universitet (September 2020). I have worked as a data analyst/quantitative research assistant for the last years in academia. Looking for transitioning to industry.
