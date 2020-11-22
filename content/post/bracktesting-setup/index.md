@@ -1,5 +1,5 @@
 ---
-title: 'Setting up a Backtesting environment'
+title: 'Setting up a Backtesting environment with Python'
 subtitle: ''
 
 summary: We will set up a backtesting enviromnet for algorithmit trading using Zipline, Pyfolio and Jupyter Lab.
