@@ -109,8 +109,9 @@ conda install -c conda-forge nb_conda_kernels
 
 Install Pyfolio, an amazing tool to perform a quick risk analysis of the strategy:
 ```python
-conda install -c quantopian pyfolio
+pip install pyfolio
 ```
+Pyfolio is currently [not being updated by conda](https://anaconda.org/quantopian/pyfolio), so your only option at the moment to install the last version is using the global pip.
 
 Finally, run the following to install Zipline, required to access the financial data:
 ```python
