@@ -122,7 +122,7 @@ conda install -c conda-forge zipline
 
 In the previous steps, you have installed all the packages, but the financial data to evaluate the model is still missing. Financial data providers don't provide minute stock pricing for free because they are such kind of humans, they charge money for it. I will use a free data API called "quanld" or "quantopian-quanld". For zero-cost backtesting purposes, is an okay alternative.
 
-The main problem with this API is that we can only run the backtest until Dec 2018. This situation will not be updated, as [Quantoian is closed](https://www.neudata.co/alternative-data-news/quantopian-shuts-its-doors-co-founders-join-robinhood), and quanld free API will be deprecated. Still, is an easy to use source and gets you ready to try algorithmic strategies in a local envirnment.
+The main problem with this API is that we can only run the backtest until Dec 2018. This situation will not be updated, as [Quantoian is closed](https://www.neudata.co/alternative-data-news/quantopian-shuts-its-doors-co-founders-join-robinhood), and quanld free API will be deprecated. Still, is an easy to use source and gets you ready to try algorithmic strategies in a local environment.
 
 To have access to the data you have to create a free account at www.Quandl.com and find an API key in your account settings. To use the key you have to go to the terminal, make sure that you are in the "backtesting environment", and run:
 
