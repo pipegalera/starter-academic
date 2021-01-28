@@ -120,9 +120,11 @@ conda install -c conda-forge zipline
 
 ## Step 3. Getting financial data
 
-In the previous steps, you have installed all the packages, but the financial data to evaluate the model is still missing. Usually, updated financial data is not free.
+In the previous steps, you have installed all the packages, but the financial data to evaluate the model is still missing. Financial data providers don't provide minute stock pricing for free because they are such kind of humans, they charge money for it. I will use a free data API called "quanld" or "quantopian-quanld". For zero-cost backtesting purposes, is an okay alternative.
 
-We will use the best free source by late 2020, Quandl. To have access to the data you have to create a free account at www.Quandl.com and find an API key in your account settings. To use the key you have to go to the terminal, make sure that you are in the "backtesting environment", and run:
+The main problem with this API is that we can only run the backtest until Dec 2018. This situation will not be updated, as [Quantoian is closed](https://www.neudata.co/alternative-data-news/quantopian-shuts-its-doors-co-founders-join-robinhood), and quanld free API will be deprecated. Still, is an easy to use source and gets you ready to try algorithmic strategies in a local envirnment.
+
+To have access to the data you have to create a free account at www.Quandl.com and find an API key in your account settings. To use the key you have to go to the terminal, make sure that you are in the "backtesting environment", and run:
 
 ```python
 set QUANDL_API_KEY=the_key_of_your_account
