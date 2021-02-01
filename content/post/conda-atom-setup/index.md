@@ -1,6 +1,6 @@
 ---
 title: 'Setting up a Python + Markdown environment with Atom'
-subtitle: ''
+subtitle: 'Step by step guide to set up a Python virtual environment with Anaconda for interactive programming and document creation'
 
 summary: Step by step guide to set up a Python virtual environment with Anaconda for interactive programming and document creation
 
@@ -28,7 +28,7 @@ draft: false
 
 image:
   placement: 2
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/SDPVzWqdQHA)'
+  caption: ''
   focal_point: Smart
   preview_only: false
 
