@@ -1,8 +1,8 @@
 ---
 title: 'Your First Zipline Backtest'
-subtitle: 'Goal: create a basic strategy in which we will trade a single stock, Apple. We are going to be long Apple if the price closes over its 100 day moving average.'
+subtitle: 'The goal is creating a basic strategy in which we will trade a single stock, Apple. We are going to be long Apple if the price closes over its 100 day moving average'
 
-summary: 'Goal: create a basic strategy in which we will trade a single stock, Apple. We are going to be long Apple if the price closes over its 100 day moving average.'
+summary: 'The goal is creating a basic strategy in which we will trade a single stock, Apple. We are going to be long Apple if the price closes over its 100 day moving average'
 
 authors:
 - admin

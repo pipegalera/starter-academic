@@ -1,8 +1,8 @@
 ---
 title: 'Predicting credit card approval'
-subtitle: ''
+subtitle: 'Build a machine learning model that can predict an application approval for a credit card with 85% accuracy'
 
-summary: We will build a machine learning model that can predict an application approval for a credit card with 85% accuracy.
+summary: Build a machine learning model that can predict an application approval for a credit card with 85% accuracy
 
 authors:
 - admin
