@@ -56,17 +56,18 @@ click View >> Toggle Soft Wrap
 
 ### List of packages to install:
 
-- file-icons
-- hydrogen
-- data-explorer
-- platformio-atom-ide-terminal
-- multi-cursor-plus
-- language-markdown
-- markdown-preview-plus
+1. file-icons
+2. hydrogen
+3. data-explorer
+4. platformio-ide-terminal
+5. multi-cursor-plus
+6. language-markdown
+7. markdown-preview-plus
+8. tblr
 
 To install all the packages in one batch:
 ```
-apm install hydrogen file-icons data-explorer platformio-atom-ide-terminal multi-cursor-plus language-markdown markdown-preview-plus
+apm install hydrogen file-icons data-explorer platformio-ide-terminal multi-cursor-plus language-markdown markdown-preview-plus https://github.com/mfripp/atom-tablr.git
 ```
 
 ### What they do:
@@ -118,6 +119,7 @@ Multicursor that supports multiple selections and removing previous cursors at a
 6. [Markdown language and compiler](https://atom.io/packages/language-markdown)
 
 Markdown syntax inside Atom, displayed with a math-friendly complier.
+
 <p align="center">
 <img width="800" height="400" src="https://raw.githubusercontent.com/atom-community/markdown-preview-plus/master/imgs/mpp-full-res-invert.png">
 </p>
@@ -127,6 +129,15 @@ Use:
 - Make sure you checked *Use GitHub&#46;com style* in the package settings
 - Toggle Preview: <code>ctrl-shift-m</code>
 - Toggle Math Rendering: <code>ctrl-shift-x</code>
+
+7. [tblr](https://github.com/mfripp/atom-tablr)
+
+Table visualizer and editor of CSV files.
+
+<p align="center">
+<img width="800" height="400" src="https://camo.githubusercontent.com/3d7daee9b21cb283b79a5f30d2661d7591726051f718484c8c3dcd4e190765ac/687474703a2f2f61626533332e6769746875622e696f2f61746f6d2d7461626c722f7461626c722e676966">
+</p>
+
 
 ## 2. Create a specifict Virtual environment with Anaconda
 
