@@ -41,7 +41,7 @@ projects: []
 ---
 
 
-:warning: The set up is based on my personal preferences at 01/02/2021.
+:warning: The set up is based on my personal preferences at 04/02/2021.
 
 ## 1. Atom Setup from scratch
 
@@ -61,13 +61,14 @@ click View >> Toggle Soft Wrap
 3. data-explorer
 4. platformio-ide-terminal
 5. multi-cursor-plus
-6. language-markdown
-7. markdown-preview-plus
-8. tblr
+6. language-markdown and markdown-preview-plus
+7. tblr
+8. python-indent
+9. atom-python-virtualenv
 
 To install all the packages in one batch:
 ```
-apm install hydrogen file-icons data-explorer platformio-ide-terminal multi-cursor-plus language-markdown markdown-preview-plus https://github.com/mfripp/atom-tablr.git
+apm install hydrogen file-icons data-explorer platformio-ide-terminal multi-cursor-plus language-markdown markdown-preview-plus https://github.com/mfripp/atom-tablr.git python-indent atom-python-virtualenv
 ```
 
 ### What they do:
@@ -138,6 +139,26 @@ Table visualizer and editor of CSV files.
 <img width="800" height="400" src="https://camo.githubusercontent.com/3d7daee9b21cb283b79a5f30d2661d7591726051f718484c8c3dcd4e190765ac/687474703a2f2f61626533332e6769746875622e696f2f61746f6d2d7461626c722f7461626c722e676966">
 </p>
 
+8. [python-indent](https://atom.io/packages/python-indent)
+
+Automatically applies PEP8 indentation.
+
+<p align="center">
+<img width="800" height="400" src="https://raw.githubusercontent.com/DSpeckhals/python-indent/master/resources/img/python-indent-demonstration.gif">
+</p>
+
+9. [atom-python-virtualenv](https://atom.io/packages/atom-python-virtualenv)
+
+Allows to select the virtual environment connected to Atom.
+
+<p align="center">
+<img width="800" height="400" src="https://cloud.githubusercontent.com/assets/1611808/21472334/671a0614-cabb-11e6-9b33-3ba1459ca072.png">
+</p>
+
+Use:
+- Select virtual environment: <code>Ctrl+Alt+V</code>
+
+
 
 ## 2. Create a specifict Virtual environment with Anaconda
 
@@ -153,8 +174,9 @@ What it is important is conda package manager, which is in both options. The mai
  Once installed, run on terminal:
 
 ```console
-conda create --name <whatevername> python=3.6
-conda install -n <whatevername> <whateverpackage_1> <whateverpackage_2>
+conda create --name <YourEnvNameHere> python=3.6
+conda activate <YourEnvNameHere>
+conda install -n <YourEnvNameHere> <whateverpackage_1> <whateverpackage_2>
 ```
 
 Chose the python version according to the purpose of the project packages used, being 3.6 to 3.8 the most common at the time.
@@ -162,9 +184,8 @@ Chose the python version according to the purpose of the project packages used, 
 To connect with the interactive Atom setup, install a Python kernel ([iPython](https://ipython.org/)) by running the following in the respective virtual environment ([Source](https://ipython.readthedocs.io/en/stable/install/kernel_install.html)):
 
 ```
-conda install ipykernel
-python -m ipykernel install
-conda install jupyter
+conda install ipykernel jupyter
+python -m ipykernel install --user --name <YourEnvNameHeRE>
 ```
 
 ## 3. Example seting up a XGBoost project
@@ -175,16 +196,15 @@ XGBoost is kind of [tricky to install](https://xgboost.readthedocs.io/en/latest/
 # Create virtual environment
 conda create --name xgb_test python=3.6
 
+# Activate the virtual environment
+conda activate xgb_test
+
 # Install Ipykernel for the environment
-conda install ipykernel
-python -m ipykernel install
-conda install jupyter
+conda install ipykernel jupyter
+python -m ipykernel install --user --name xgb_test
 
 # Install GPU-enabled XGBoost conda package
 conda install -n xgb_test -c nvidia -c rapidsai py-xgboost
-
-# Activate the virtual environment
-conda activate xgb_test
 ```
 
 It can be checked if the environment has the installed Python and the package, by typing *python* and importing the package *xgboost* without errors:
