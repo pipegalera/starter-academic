@@ -24,7 +24,7 @@ interests:
 education:
   courses:
   - course: Msc. in Economics
-    institution: Københavns Universitet (Copenhagen, Denmark)
+    institution: University of Copenhagen (Copenhagen, Denmark)
     year: 2020
   - course: Bachelor in Economics
     institution: University Pompeu Fabra (Barcelona, Spain)
@@ -65,4 +65,4 @@ user_groups:
 #- Visitors
 ---
 
-I am a recent graduate in Economics from Københavns Universitet (September 2020). I have worked as a data analyst/quantitative research assistant for the last years in academia. Looking for transitioning to industry.
+I am a recent graduate in Economics from Københavns Universitet (September 2020). I have worked as a data analyst/quantitative research assistant for the last years in academia.
