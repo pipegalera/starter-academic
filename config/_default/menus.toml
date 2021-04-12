@@ -24,8 +24,3 @@
   name = "Posts"
   url = "/post"
   weight = 30
-
-[[main]]
-  name = "Complete CV"
-  url = "files/pipegalera.pdf"
-  weight = 40
